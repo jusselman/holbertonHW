@@ -1,0 +1,14 @@
+{
+  "name": "holberton",
+  "version": "1.0.0",
+  "description": "Trying to make Betty proud",
+  "main": "main.js",
+  "scripts": {
+    "getSassy": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Joshua Usselman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
