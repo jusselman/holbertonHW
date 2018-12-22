@@ -1,0 +1,16 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 3.5rem;
+  top: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  .btn-line {
+    width: 3rem;
+    height: 3px;
+    margin: 0 0 0.5rem 0;
+    background: #fff;
+    transition: all 0.3s;
+  }
+}

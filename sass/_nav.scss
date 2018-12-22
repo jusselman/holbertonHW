@@ -1,4 +1,4 @@
-.nav {
+.menu {
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,5 +19,11 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+  }
+  &__nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(grey, 0.75);
+    list-style: none;
   }
 }
