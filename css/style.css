@@ -12,9 +12,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
-  background-image: url("../img/betty-bg.jpg");
-  background-size: cover;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Alice', sans-serif; }
 
 .menu {
   position: fixed;
@@ -45,10 +44,42 @@ body {
   right: 3.5rem;
   top: 3.5rem;
   cursor: pointer;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  position: fixed; }
   .menu-btn .btn-line {
     width: 3rem;
     height: 3px;
     margin: 0 0 0.5rem 0;
     background: #fff;
     transition: all 0.3s; }
+
+.header {
+  height: 100vh;
+  background-image: url("../img/betty-bg.jpg");
+  position: relative; }
+  .header__title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 4;
+    top: 20rem;
+    margin: 0 auto; }
+  .header__bg-image {
+    width: 100%;
+    background-size: cover;
+    background-attachment: right;
+    background-position: 80% 30%;
+    background-repeat: none;
+    filter: blur(3px) brightness(50%); }
+  .header .main {
+    padding: 4rem;
+    min-height: calc(100vh - 60px);
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.lg-heading {
+  font-size: 6rem; }
+
+.sm-heading {
+  font-size: 3rem; }

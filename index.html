@@ -8,10 +8,19 @@
       href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400|Raleway:300i,400"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alice"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="header__title">
+        <h1 class="lg-heading">Betty Holberton</h1>
+        <h2 class="sm-heading">A true coding pioneer</h2>
+      </div>
+      <div class="header header__bg-image"></div>
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -20,18 +29,26 @@
 
       <nav class="menu">
         <ul class="menu-nav">
-          <li class="nav-item"><a href="/"> Home </a></li>
-          <li class="nav-item"><a href="/"> About </a></li>
-          <li class="nav-item"><a href="/"> Blog </a></li>
-          <li class="nav-item"><a href="/"> Contact </a></li>
+          <li class="menu__nav-item">
+            <a href="/" class="menu__nav-link"> Home </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="/" class="menu__nav-link"> About </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="/" class="menu__nav-link"> Blog </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="/" class="menu__nav-link"> Contact </a>
+          </li>
         </ul>
       </nav>
+      <!-- <div class="home" id="home">
+        <h1 class="lg-heading">Betty Holberton</h1>
+        <h2 class="sm-heading">A true coding pioneer</h2>
+      </div> -->
     </header>
 
-    <main id="home">
-      <h1 class="lg-heading">Betty Holberton</h1>
-      <h2 class="sm-heading">A true coding pioneer</h2>
-    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
