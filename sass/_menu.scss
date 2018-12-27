@@ -4,14 +4,65 @@
   right: 3.5rem;
   top: 3.5rem;
   cursor: pointer;
-  transition: all 0.3s;
   position: fixed;
+  @include easyPeasy;
 
   .btn-line {
     width: 3rem;
     height: 3px;
     margin: 0 0 0.5rem 0;
     background: #fff;
-    transition: all 0.3s;
+    @include easyPeasy;
+  }
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      //line 1 hamburger //
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(0.7rem, -0.6rem);
+      }
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
+  height: 100vh;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: $primary-color;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    // @include easyPeasy;
+
+    // &.show {
+    //   //slide in from top //
+    //   tranform: translate3d(0, 0, 0);
+    // }
   }
 }
