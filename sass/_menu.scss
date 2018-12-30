@@ -5,6 +5,7 @@
   top: 3.5rem;
   cursor: pointer;
   position: fixed;
+  z-index: 5;
   @include easyPeasy;
 
   .btn-line {
@@ -36,12 +37,23 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.95;
   height: 100vh;
   visibility: hidden;
+  z-index: 4;
+  // display: inline-block;
+
+  &__nav-link {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #fff;
+    // z-index: 999;
+    font-weight: 800;
+  }
 
   &.show {
     visibility: visible;
+    // z-index: 9;
   }
 
   &-nav {
@@ -49,7 +61,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
+    // float: left;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -58,11 +70,49 @@
     background-color: $primary-color;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    // @include easyPeasy;
+    line-height: 2;
+    @include easyPeasy;
 
-    // &.show {
-    //   //slide in from top //
-    //   tranform: translate3d(0, 0, 0);
+    // &-nav:hover {
+    //   transform: translate(1.5);
     // }
+
+    &.show {
+      //slide in from top, kind of a big deal //
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //
+  //   transform: skew(90deg);
+  //   // display: inline-block;
+
+  //   // transform: scale(1, 1);
+  //   @include easyPeasy;
+  // }
+
+  // &__nav-link:hover {
+  //   color: $primary-faded;
+  //   // font-size: 5rem;
+  //   transform: translate3d(0, 0, 0) scale(1.5);
+  // }
+  .nav-item {
+    font-size: 3rem;
+    visibility: hidden;
+    text-decoration: none;
+    transform: translate3d(70rem, 0, 0);
+    @include easyPeasy;
+
+    &.show {
+      //slide in from right //
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.3s;
   }
 }
