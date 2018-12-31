@@ -12,15 +12,17 @@
       href="https://fonts.googleapis.com/css?family=Thasadith"
       rel="stylesheet"
     />
+
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
+      <div class="header header__bg-image"></div>
+
       <div class="header__title">
         <h1 class="lg-heading">Betty Holberton</h1>
         <h2 class="sm-heading">A true coding pioneer</h2>
       </div>
-      <div class="header header__bg-image"></div>
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -30,16 +32,18 @@
       <nav class="menu">
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="#home" class="menu__nav-link"> Home </a>
+            <a href="#home" class="menu__nav-link scroll"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="menu__nav-link"> History </a>
+            <a href="#history" class="menu__nav-link scroll"> History </a>
           </li>
           <li class="nav-item">
-            <a href="#blog" class="menu__nav-link"> Achievements </a>
+            <a href="#achievements" class="menu__nav-link scroll">
+              Achievements
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="menu__nav-link"> Donate </a>
+            <a href="#contact" class="menu__nav-link scroll"> Donate </a>
           </li>
         </ul>
       </nav>
@@ -50,12 +54,22 @@
     </header>
 
     <section class="history" section id="history">
-      <div class="history history__header">
-        <h1 class="history history__header-1">Leaps and Bounds</h1>
-        <h2 class="history history__header-2">A New Voice in Code</h2>
+      <!-- <div class="history history__bg-image"></div> -->
+      <div class="history__header-container">
+        <h1 class="history__header-1">Leaps and Bounds</h1>
+        <h2 class="history__header-2">A New Voice in Code</h2>
       </div>
     </section>
 
+    <section class="achievements" id="achievements">
+      <div class="achievements achievements__bg-image"></div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
